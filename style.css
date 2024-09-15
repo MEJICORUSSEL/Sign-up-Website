@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    display: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.container{
+    max-width: 700x;
+    width: 40%;
+    background: linear-gradient(rgb(243, 71, 174),rgb(106, 14, 186),rgb(101, 129, 156));
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.cons{
+    max-width: 145px;
+    width: 40%;
+    background: linear-gradient(rgb(243, 71, 174),rgb(106, 14, 186),rgb(101, 129, 156));
+    padding: 25px 10px;
+    border-radius: 40px;
+    margin-right: 50px;
+    
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+
+}
+.cons .title{
+    font-size: 20px;
+    font-weight: 250;
+    
+
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 45px;
+    background: rgb(35, 35, 234);
+}
+.container form .userdetails{
+    display: row;
+    justify-content: space-between;
+    margin: 20px 0 12 px 0;
+}
+.cons form .det{
+    display: inline block;
+    justify-content: space-between;
+    margin: 20px 0 12 px 0;
+}
+form .userdetail .inputbox{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20 px);
+}
+.userdetail .inputbox .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.toggle-password1 {
+    position: absolute;
+    right: 420px;
+    top: 270px;
+    cursor: pointer;
+    font-size: 25px;
+    color: #1b4e24;
+}
+.toggle-password2 {
+    position: absolute;
+    right: 420px;
+    top: 356px;
+    cursor: pointer;
+    font-size: 25px;
+    color: #1b4e24;
+}
+.eye-icon { 
+    font-size: 20px;
+}
+.eye {
+    font-size: 20px;
+}
+.userdetails .inputbox input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease-in-out;
+}
+.userdetails .inputbox input:focus,
+.userdetails .inputbox input:valid{
+    border-color: darkgreen;
+}
+form .sexdetails .sextitle .gender{
+    font-size: 20px;
+    font-weight: 500;  
+}
+form .sexdetails .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.sexdetails .category label{
+    display: flex;
+}
+.sexdetails .category .dot{
+    height: 18px;
+    width: 18px;
+    background: rgb(206, 202, 202);
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three{
+    border-color: aliceblue;
+    background: rgb(199, 15, 15);
+}
+form input[type="radio"]{
+    display: none;
+
+}
+form .button input[type="submit"]{
+   
+    width: 30%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    letter-spacing: 3px;
+    background: rgb(5, 69, 94);
+}
+form .button input[type="reset"]{
+   
+    width: 30%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 20;
+    border-radius: 10px;
+    letter-spacing: 3px;
+    background: rgb(231, 76, 76);
+    transition: box-shadow 0.10s ease-in-out;
+}
+form .button input:hover{
+    box-shadow: 0 5px 1px rgba(4, 7, 1, 0.2);
+    
+}
+    @media (max-width: 584px){
+        .container{
+            max-width: 100%;
+        }
+        form .userdetails .inputbox{
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        form .sexdetails .category{
+            width: 100%;
+        }
+        .container form .userdetails{
+            max-height: 300px;
+            overflow-y: scroll;            
+        }
+        .userdetail::webkit-scrollbar{
+            width: 0;
+        }
+    }

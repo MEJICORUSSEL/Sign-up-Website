@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="des.css">
+    <title>Sign In Form</title>
+        
+</head>
+<body>
+    <video class="video-background" autoplay muted loop>
+        <source src="bg.mp4" type="video/mp4">
+        
+    </video>
+<div class="container">
+    <div class="title"> Sign In Here!</div></br>
+    <form action="#">
+        <div class="userdetails">
+            
+            <div class="inputbox">
+                <span class="details">Email</span>
+                <input type="text" placeholder="Enter Your Username" required></br></br>
+            </div>
+            <div class="inputbox">
+                <span class="details">Password</span>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <span class="toggle-password1" onclick="togglePassword('password', 'toggleIcon1')">
+                    <i id="toggleIcon1" class="eye-icon">&#128065;</i> <!-- Eye icon Unicode -->
+                </span> </br> </br>
+                </div>
+            
+                <div class="button">
+                    <input type="submit" value="Sign In">
+                    <input type="reset" value="Cancel">
+                </div>
+            </div>  
+        </br>
+        <a href="index.html">Sign up?</a>
+        </div> 
+    </form>
+</div>
+<div class="cons">
+    <div class="title"> Message Us!</div>
+    <form action="#">
+        <div class="det">
+        <div class="fb">
+            <a href="https://www.facebook.com/R.D.M.mejico">
+                <img
+                  src="https://1000logos.net/wp-content/uploads/2017/02/Facebook-Logosu.png"
+                  width="100"
+                  alt="Fb logo">
+    </a>
+        </div>
+        <div class="ig"></div>
+            <a href="https://www.instagram.com/rrrrruuuuussseeelll/">
+                <img
+                  src="https://1000logos.net/wp-content/uploads/2017/02/Instagram-Logo.png"
+                  width="100"
+                  alt="ig logo">
+    </a>
+       <div class="X"></div>
+          <a href="https://x.com/?lang=en">
+        <img
+          src="https://1000logos.net/wp-content/uploads/2017/06/Twitter-Log%D0%BE.png"
+          width="100"
+          alt="X logo">
+</a>
+</div>
+    </form>
+</div>   
+<script>
+    function togglePassword(inputId, iconId) {
+        const passwordInput = document.getElementById(inputId);
+        const icon = document.getElementById(iconId);
+        
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            icon.innerHTML = "&#128065;"; // Change icon to an open eye (if you have multiple icons)
+        } else {
+            passwordInput.type = "password";
+            icon.innerHTML = "&#128065;"; // Change icon back to closed eye
+        }
+    }
+    </script>
+</body>
+</html>
