@@ -25,7 +25,7 @@
                 <span class="details">Password</span>
                 <input type="password" id="password" name="password" placeholder="Enter your password" required>
                 <span class="toggle-password1" onclick="togglePassword('password', 'toggleIcon1')">
-                    <i id="toggleIcon1" class="eye-icon">&#128065;</i> <!-- Eye icon Unicode -->
+                    <i id="toggleIcon1" class="eye-icon">&#128065;</i> 
                 </span> </br> </br>
                 </div>
             
@@ -75,10 +75,10 @@
         
         if (passwordInput.type === "password") {
             passwordInput.type = "text";
-            icon.innerHTML = "&#128065;"; // Change icon to an open eye (if you have multiple icons)
+            icon.innerHTML = "&#128065;"; 
         } else {
             passwordInput.type = "password";
-            icon.innerHTML = "&#128065;"; // Change icon back to closed eye
+            icon.innerHTML = "&#128065;"; 
         }
     }
     </script>
